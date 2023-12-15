@@ -2,6 +2,8 @@ import React,{useState, useEffect} from "react";
 import "./components/style.css";
 import { AnimeList } from "./components/AnimeList";
 import { AnimeInfo } from "./components/AnimeInfo";
+
+
 function App() {
   const [animeData,setAnimeData] = useState(); 
   const [searchAnime,setSearchAnime] = useState('Naruto');
