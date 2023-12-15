@@ -11,7 +11,7 @@ function App() {
     const res = await fetch(`https://api.jikan.moe/v4/anime?q=${searchAnime}&limit=20`);
     const resData = await res.json();
     setAnimeData(resData.data);
-    console.log(resData);
+    console.log(resData); 
 
   }  
 
