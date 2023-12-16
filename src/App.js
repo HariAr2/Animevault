@@ -5,6 +5,8 @@ import { AnimeInfo } from "./components/AnimeInfo";
 
 
 function App() {
+
+  
   const [animeData,setAnimeData] = useState(); 
   const [searchAnime,setSearchAnime] = useState('Naruto');
   const [animeInfo,setAnimeInfo] = useState();
