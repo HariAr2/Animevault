@@ -22,7 +22,7 @@ export const AnimeList = ({ animelist,setAnimeInfo }) => {
           );
         })
       ) : (
-        <div>Loading ... ... ...</div>
+        <div>Loading ... ... Please wait ...</div>
       )}
     </>
   );
