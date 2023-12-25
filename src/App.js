@@ -6,12 +6,14 @@ import { AnimeInfo } from "./components/AnimeInfo";
 function App() {
   // State variables
   const [animeData, setAnimeData] = useState(); // Holds fetched anime data
-  const [searchAnime, setSearchAnime] = useState('Naruto'); // Stores the searched anime
+  const [searchAnime, setSearchAnime] = useState("Naruto"); // Stores the searched anime
   const [animeInfo, setAnimeInfo] = useState(); // Stores selected anime information
 
   // Function to fetch anime data based on search query
   const getData = async () => {
-    const res = await fetch(`https://api.jikan.moe/v4/anime?q=${searchAnime}&limit=20`);
+    const res = await fetch(
+      `https://api.jikan.moe/v4/anime?q=${searchAnime}&limit=20`
+    );
     const resData = await res.json();
     setAnimeData(resData.data);
     console.log(resData);
@@ -39,9 +41,7 @@ function App() {
       {/* Main content */}
       <div className="container">
         {/* Display selected anime information */}
-        <div className="anime-info">
-          {animeInfo && <AnimeInfo />}
-        </div>
+        <div className="anime-info">{animeInfo && <AnimeInfo />}</div>
         {/* Display list of anime */}
         <div className="anime-row">
           <h2 className="text-heading">Anime</h2>
