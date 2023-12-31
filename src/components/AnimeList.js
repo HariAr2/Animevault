@@ -10,8 +10,8 @@ export const AnimeList = ({ animelist, setAnimeInfo }) => {
           return (
             <div className="card" key={index}>
               {anime.images &&
-              anime.images.jpg &&
-              anime.images.jpg.large_image_url ? (
+                anime.images.jpg &&
+                anime.images.jpg.large_image_url ? (
                 <img src={anime.images.jpg.large_image_url} alt="animeImg" />
               ) : (
                 <img src="placeholder_image_url" alt="Placeholder" /> // Placeholder image or error handling
