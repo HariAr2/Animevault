@@ -49,7 +49,7 @@ function App() {
           <div className="row">
             {/* Pass fetched anime data and setter for animeInfo */}
             <AnimeList animelist={animeData} setAnimeInfo={setAnimeInfo} />
-            
+
           </div>
         </div>
       </div>
