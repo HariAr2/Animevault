@@ -11,7 +11,7 @@ function App() {
   const [animeInfo, setAnimeInfo] = useState(); // Stores selected anime information
 
   // Function to fetch anime data based on search query
-  const getData = async () => {
+  const getData = async () => { 
     const res = await fetch(
       `https://api.jikan.moe/v4/anime?q=${searchAnime}&limit=20`
     );
