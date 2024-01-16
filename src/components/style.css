@@ -31,13 +31,13 @@ body {
   font-size: 1.2rem;
   padding: 0 1rem;
 }
-
+/* container styling*/
 .container {
   width: 100%;
   margin-top: 100px auto;
   display: flex;
 }
-
+/* info styling*/
 .anime-info {
   width: 300px;
   height: 100%;
@@ -46,7 +46,7 @@ body {
   top: 0;
   z-index: 11;
 }
-
+/* anime row styling*/
 .anime-row {
   display: flex;
   flex-direction: column;
