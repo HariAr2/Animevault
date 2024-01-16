@@ -1,5 +1,5 @@
 import React from "react";
-
+// arrow function 
 export const AnimeList = ({ animelist, setAnimeInfo }) => {
   console.log(animelist);
 
