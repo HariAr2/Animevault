@@ -3,7 +3,7 @@ import "./components/style.css";
 import { AnimeList } from "./components/AnimeList";
 import { AnimeInfo } from "./components/AnimeInfo";  
 
-
+// main function
 function App() {
   // State variables
   const [animeData, setAnimeData] = useState(); // Holds fetched anime data 
