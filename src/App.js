@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./components/style.css";
 import { AnimeList } from "./components/AnimeList";
-import { AnimeInfo } from "./components/AnimeInfo";  
+import { AnimeInfo } from "./components/AnimeInfo";
 
 // main function
 function App() {
@@ -11,7 +11,7 @@ function App() {
   const [animeInfo, setAnimeInfo] = useState(); // Stores selected anime information
 
   // Function to fetch anime data based on search query
-  const getData = async () => { 
+  const getData = async () => {
     const res = await fetch(
       `https://api.jikan.moe/v4/anime?q=${searchAnime}&limit=20`
     );
