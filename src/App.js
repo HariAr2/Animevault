@@ -6,7 +6,7 @@ import { AnimeInfo } from "./components/AnimeInfo";
 // main function
 function App() {
   // State variables
-  const [animeData, setAnimeData] = useState(); // Holds fetched anime data 
+  const [animeData, setAnimeData] = useState(); // Holds fetched anime data
   const [searchAnime, setSearchAnime] = useState("Attack on titan"); // Stores the searched anime
   const [animeInfo, setAnimeInfo] = useState(); // Stores selected anime information
 
